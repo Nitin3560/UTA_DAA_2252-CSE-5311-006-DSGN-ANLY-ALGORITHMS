@@ -4,7 +4,7 @@ def quicksort(arr):
     if len(arr) <= 1:
         return arr
 
-    pivot = arr[-1]  # Choose the last element as the pivot
+    pivot = arr[-1]  
     less = [x for x in arr if x < pivot]
     equal = [x for x in arr if x == pivot]
     greater = [x for x in arr if x > pivot]
@@ -15,7 +15,7 @@ def quicksort_random(arr):
     if len(arr) <= 1:
         return arr
 
-    pivot = random.choice(arr)  # Randomly choose a pivot
+    pivot = random.choice(arr)  
     less = [x for x in arr if x < pivot]
     equal = [x for x in arr if x == pivot]
     greater = [x for x in arr if x > pivot]
